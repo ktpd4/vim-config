@@ -35,7 +35,8 @@ Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
 Plugin 'klen/python-mode'
 Plugin 'davidhalter/jedi-vim'
-
+Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
+Plugin 'scrooloose/nerdtree'
 call vundle#end()            " required
 filetype plugin indent on    " required
 "To ignore plugin indent changes, instead use:
@@ -53,4 +54,16 @@ filetype plugin indent on    " required
 autocmd BufRead,BufNewFile *.{md,mdown,mkd,mkdn,markdown,mdwn} map <Leader>p :!google-chrome %<CR>
 autocmd BufRead,BufNewFile *.{py} map <F10> :w<bar> !python %<CR>
 map <Leader>w :!pandoc -s % -o %.doc<CR>
-
+let g:pymode_rope = 0
+"augroup vimrc_autocmds
+"	 autocmd!
+	        " highlight characters past column 120
+"	 autocmd FileType python highlight Excessctermbg=DarkGrey guibg=Black
+ "        autocmd FileType python match Excess /\%120v.*/
+  "       autocmd FileType python set nowrap
+"augroup END
+" Powerline setup
+ set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 9
+ set laststatus=2
+ map <F2> :NERDTreeToggle<CR>
+ 
