@@ -66,4 +66,4 @@ let g:pymode_rope = 0
  set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 9
  set laststatus=2
  map <F2> :NERDTreeToggle<CR>
- 
+ nnoremap <Space> za
