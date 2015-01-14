@@ -68,3 +68,10 @@ let g:pymode_rope = 0
  nnoremap <Space> za
  autocmd InsertEnter * :set nornu
  autocmd InsertLeave * :set relativenumber
+
+ function! Testpython()
+	 pyfile vimpython.py
+ endfunc
+
+ command Testpy call  Testpython()
+ 
