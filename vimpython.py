@@ -5,6 +5,8 @@ j=0
 while j<i:
     cb[j]=cb[j]+"***"
     j+=1
+<<<<<<< HEAD
+'''
 '''
 j=0
 import sys
@@ -15,3 +17,4 @@ for i in sys.stdin:
 
 
 
+'''
