@@ -15,3 +15,6 @@ for i in sys.stdin:
 
 
 '''
+wordcount=''.join(cb)
+print "total  {0} charactors".format(len(wordcount.decode("utf-8")))
+
