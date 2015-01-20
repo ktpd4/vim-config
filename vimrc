@@ -1,4 +1,3 @@
-
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
@@ -71,8 +70,8 @@ let g:pymode_rope = 0
  autocmd InsertLeave * :set relativenumber
 
  function! Testpython()
-	 pyfile vimpython.py
+	 pyfile ~/projects/vim-config/vimpython.py
  endfunc
 
- command Testpy call  Testpython()
+ command Cc call  Testpython()
  
