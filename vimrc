@@ -66,6 +66,7 @@ let g:pymode_rope = 0
  set laststatus=2
  map <F2> :NERDTreeToggle<CR>
  nnoremap <Space> za
+ set nu
  autocmd InsertEnter * :set nornu
  autocmd InsertLeave * :set relativenumber
 
