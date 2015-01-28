@@ -36,6 +36,7 @@ Plugin 'klen/python-mode'
 Plugin 'davidhalter/jedi-vim'
 Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 Plugin 'scrooloose/nerdtree'
+Plugin 'altercation/vim-colors-solarized'
 call vundle#end()            " required
 filetype plugin indent on    " required
 "To ignore plugin indent changes, instead use:
@@ -75,4 +76,7 @@ let g:pymode_rope = 0
  endfunc
 
  command Cc call  Testpython()
- 
+syntax enable
+set background=dark
+"set background=light
+colorscheme solarized
