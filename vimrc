@@ -36,7 +36,8 @@ Plugin 'klen/python-mode'
 Plugin 'davidhalter/jedi-vim'
 Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 Plugin 'scrooloose/nerdtree'
-Plugin 'altercation/vim-colors-solarized'
+"Plugin 'altercation/vim-colors-solarized'
+"Plugin 'Glench/Vim-Jinja2-Syntax'
 call vundle#end()            " required
 filetype plugin indent on    " required
 "To ignore plugin indent changes, instead use:
@@ -63,11 +64,14 @@ let g:pymode_rope = 0
   "       autocmd FileType python set nowrap
 "augroup END
 " Powerline setup
+"
  set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 9
  set laststatus=2
  map <F2> :NERDTreeToggle<CR>
  nnoremap <Space> za
  set nu
+ set relativenumber
+
  autocmd InsertEnter * :set nornu
  autocmd InsertLeave * :set relativenumber
 
@@ -76,7 +80,7 @@ let g:pymode_rope = 0
  endfunc
 
  command Cc call  Testpython()
-syntax enable
-set background=dark
+"syntax enable
+"set background=dark
 "set background=light
-colorscheme solarized
+"colorscheme solarized
