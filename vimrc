@@ -74,9 +74,15 @@ let g:pymode_rope = 0
  autocmd InsertEnter * :set nornu
  autocmd InsertLeave * :set relativenumber
 
- function! Testpython()
-	 pyfile ~/projects/vim-config/vimpython.py
+ function! Cc()
+	 pyfile ~/projects/vim-config/countchinese.py
  endfunc
 
- command Cc call  Testpython()
+ command Cc call  Cc()
+ 
+ function! Blog()
+	 pyfile ~/projects/vim-config/blog.py
+ endfunc
+
+ command Blog call  Blog()
  
