@@ -31,11 +31,11 @@ def change(where,content):
 if modifytest():
     change('Modified',now)
 else:
-    for item in blogheader.split("\n"):
-        cb.append(item)
+    headeritems=blogheader.split("\n")[::-1]
+    for item in headeritems:
+        cb.append(item,0)
     change("Date",now)
     change("Modified",now)
     change("Slug",slug)
-    del cb[0]
     vim.command("normal gg$")
 
