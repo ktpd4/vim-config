@@ -36,6 +36,7 @@ Plugin 'klen/python-mode'
 Plugin 'davidhalter/jedi-vim'
 Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 Plugin 'scrooloose/nerdtree'
+Plugin 'othree/html5.vim'
 "Plugin 'altercation/vim-colors-solarized'
 "Plugin 'Glench/Vim-Jinja2-Syntax'
 call vundle#end()            " required
