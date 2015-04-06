@@ -53,7 +53,7 @@ filetype plugin indent on    " required
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 "autocmd InsertLeave *.* write
-autocmd BufRead,BufNewFile *.{md,mdown,mkd,mkdn,markdown,mdwn} map <Leader>p :!google-chrome %<CR>
+autocmd BufRead,BufNewFile *.{md,mdown,mkd,mkdn,markdown,mdwn,html} map <Leader>p :!google-chrome %<CR>
 autocmd BufRead,BufNewFile *.{py} map <F10> :w<bar> !python %<CR>
 map <Leader>w :!pandoc -s % -o %.doc<CR>
 let g:pymode_rope = 0
