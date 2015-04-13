@@ -71,7 +71,7 @@ let g:pymode_rope = 0
  nnoremap <Space> za
  set nu
  set relativenumber
-
+ map <Leader>s :!python -m SimpleHTTPServer<CR>
  autocmd InsertEnter * :set nornu
  autocmd InsertLeave * :set relativenumber
 
