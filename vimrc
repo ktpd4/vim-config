@@ -92,3 +92,4 @@ let g:pymode_rope = 0
 "set background=dark
 "set background=light
 "colorscheme solarized
+ set encoding=utf-8
