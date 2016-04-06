@@ -93,3 +93,4 @@ let g:pymode_rope = 0
 "set background=light
 "colorscheme solarized
  set encoding=utf-8
+ vmap <C-c> "+y
